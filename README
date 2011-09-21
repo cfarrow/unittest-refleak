@@ -1,4 +1,4 @@
-# Unittest module that reports reference leaks
+Unittest module that reports reference leaks
 
 This module is a replacement for the unittest.py model in Python 2.6. This
 differs from the standard Python 2.6 unittest in that it checks reference
@@ -6,3 +6,5 @@ counts going into and coming out of each test. If the reference count for a
 test is not neutral upon cleanup of that test, an error is reported for that
 test with the number of references leaked. This is useful for finding reference
 leaks in well-tested c extensions.
+
+This module came to me via Ilan Schnell (https://github.com/ilanschnell).
